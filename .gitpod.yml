@@ -2,6 +2,8 @@
 tasks:
   - init: pip install django # runs during prebuild
     command: echo python -m django version
+  - name: Go
+    command: python manage.py runserver 
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
