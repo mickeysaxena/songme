@@ -1,8 +1,7 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - before: pip install django # runs during prebuild
-    command: echo python -m django version
-  - name: Go
+  - name: install Django # runs during prebuild
+    init: pip install django
     command: python manage.py runserver 
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
